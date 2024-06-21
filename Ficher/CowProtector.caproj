@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>CowProtector</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>x8updy47z89j</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
+        <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Player" sid="243399095707516">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Wrap" sid="422662623822970">
+                    <behavior id="wrap" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="948104053747718">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="756635355016666" speed="5">
+                    <frame duration="1" hotspotX="0.487239" hotspotY="0.504032" original-source="C:\Users\edoua\Downloads\image_2024-06-19_124740704-removebg-preview.png">
+                        <image-point name="gun" x="1" y="0.512097" />
+                        <image-point name="Imagepoint 1" x="0.403712" y="0.0241935" />
+                        <image-point name="Imagepoint 2" x="0.338747" y="0.987903" />
+                        <image-point name="Imagepoint 3" x="0.0162413" y="0.524194" />
+                        <collision-poly>
+                            <point x="0.73782" y="0.233871" />
+                            <point x="0.99536" y="0.415322" />
+                            <point x="0.993039" y="0.58871" />
+                            <point x="0.313225" y="0.995968" />
+                            <point x="0.0185615" y="0.838709" />
+                            <point x="0.0301624" y="0.302419" />
+                            <point x="0.143852" y="0.0806452" />
+                            <point x="0.436195" y="0.00806451" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="469516324723490">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Keyboard" sid="341953970459195">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="bullet" sid="727981756215841">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="906580429984725">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="222096283104224">
+                    <behavior id="wrap" />
+                </behavior-type>
+                <behavior-type name="Timer" sid="945423680525288">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636404517530691" speed="5">
+                    <frame duration="1" hotspotX="0.505495" hotspotY="0.505495" original-source="C:\Users\edoua\Downloads\image_2024-06-19_134015097-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.032967" y="0.571429" />
+                            <point x="0.494505" y="0.021978" />
+                            <point x="0.967033" y="0.571429" />
+                            <point x="0.978022" y="0.494505" />
+                            <point x="0.967033" y="0.428571" />
+                            <point x="0.494505" y="0.978022" />
+                            <point x="0.032967" y="0.428571" />
+                            <point x="0.021978" y="0.494505" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Indian" sid="899838401475838">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Wrap" sid="720232706418989">
+                    <behavior id="wrap" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="481580784238871">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="349823793519239" speed="5">
+                    <frame duration="1" hotspotX="0.569106" hotspotY="0.497925" original-source="C:\Users\edoua\Downloads\image_2024-06-19_130426595-removebg-preview.png">
+                        <image-point name="Imagepoint 1" x="0.53252" y="-0.00622407" />
+                        <image-point name="Imagepoint 2" x="0.548781" y="1" />
+                        <collision-poly>
+                            <point x="0.841463" y="0.497925" />
+                            <point x="0.97561" y="0.705394" />
+                            <point x="0.569106" y="0.993776" />
+                            <point x="0.223577" y="0.674274" />
+                            <point x="0.349594" y="0.497925" />
+                            <point x="0.0650406" y="0.240664" />
+                            <point x="0.569106" y="0.0684648" />
+                            <point x="0.808943" y="0.375519" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spawner" sid="791178496645828">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Wrap" sid="572944919441056">
+                    <behavior id="wrap" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="364642785609450">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="825038226642966" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Split1" sid="284058076301641">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Wrap" sid="104524480500502">
+                    <behavior id="wrap" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="854494353305240">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="772314734641685" speed="5">
+                    <frame duration="1" hotspotX="0.625" hotspotY="0.475096" original-source="C:\Users\edoua\Downloads\image_2024-06-21_093023570-removebg-preview.png">
+                        <image-point name="Imagepoint 1" x="0.636364" y="-0.0651341" />
+                        <image-point name="Imagepoint 2" x="0.659091" y="1.00383" />
+                        <collision-poly>
+                            <point x="0.147727" y="0.0689655" />
+                            <point x="0.625" y="0.0498084" />
+                            <point x="0.761364" y="0.187739" />
+                            <point x="0.897727" y="0.475096" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.386364" y="0.475096" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="split2" sid="982173512010998">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Wrap" sid="813800195310932">
+                    <behavior id="wrap" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="113213265698883">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="990466222438403" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edoua\Downloads\image_2024-06-21_092056708-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.288462" y="0.267857" />
+                            <point x="0.5" y="0.0107143" />
+                            <point x="0.746154" y="0.235714" />
+                            <point x="0.642308" y="0.5" />
+                            <point x="0.615385" y="0.642857" />
+                            <point x="0.5" y="0.982143" />
+                            <point x="0.353846" y="0.671429" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Score" sid="747303941309078">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Ascore" sid="686019393631968">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="CD" sid="262843699838788">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Acd" sid="667749274631513">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="life" sid="683143701667449">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Ahp" sid="772095884475983">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="bkg" sid="285957264517266">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="502618391246969" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edoua\Downloads\istockphoto-951924976-612x612.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cow" sid="762121922731426">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Wrap" sid="697367132492830">
+                    <behavior id="wrap" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="477732059223461">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="924724460024659" speed="5">
+                    <frame duration="1" hotspotX="0.501241" hotspotY="0.562278" original-source="C:\Users\edoua\Downloads\image_2024-06-21_094429305-removebg-preview.png">
+                        <image-point name="Imagepoint 1" x="0.248139" y="0.928826" />
+                        <image-point name="Imagepoint 2" x="0.121588" y="0.323843" />
+                        <image-point name="Imagepoint 3" x="0.863524" y="0.188612" />
+                        <image-point name="Imagepoint 4" x="0.699752" y="0.939502" />
+                        <collision-poly>
+                            <point x="0.111662" y="0.199288" />
+                            <point x="0.878412" y="0.199288" />
+                            <point x="0.87593" y="0.950177" />
+                            <point x="0.111663" y="0.939502" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="title" sid="666028848537725">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="868825260756318" speed="5">
+                    <frame duration="1" hotspotX="0.500618" hotspotY="0.5" original-source="C:\Users\edoua\Downloads\image_2024-06-21_110053725-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.00865266" y="0.0945946" />
+                            <point x="0.499382" y="0.0405405" />
+                            <point x="0.988875" y="0.121622" />
+                            <point x="0.987639" y="0.864865" />
+                            <point x="0.499382" y="0.891892" />
+                            <point x="0.0123609" y="0.864865" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="play" sid="979356720994337">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="846356620248138" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edoua\Downloads\image_2024-06-21_110229646-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.464" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.916" y="1" />
+                            <point x="0.52" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="controls" sid="709635404544650">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="262311135716638" speed="5">
+                    <frame duration="1" hotspotX="0.500971" hotspotY="0.5" original-source="C:\Users\edoua\Downloads\image_2024-06-21_110249659-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.491262" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.947573" y="1" />
+                            <point x="0.500971" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="quit" sid="778732176634211">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="908153087431284" speed="5">
+                    <frame duration="1" hotspotX="0.502092" hotspotY="0.506667" original-source="C:\Users\edoua\Downloads\image_2024-06-21_110351675-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0" y="0.44" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.631799" y="1" />
+                            <point x="0.117155" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Browser" sid="152773825278485">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="kbm" sid="929873837523967">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="951940595235023" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edoua\Downloads\image_2024-06-21_111448793-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.344" y="0.344" />
+                            <point x="0.5" y="0.2" />
+                            <point x="0.656" y="0.344" />
+                            <point x="0.916" y="0.5" />
+                            <point x="0.798" y="0.798" />
+                            <point x="0.202" y="0.798" />
+                            <point x="0.076" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mousse" sid="336768206553916">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="602619188400828" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edoua\Downloads\image_2024-06-21_111548201-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.336735" y="0.336735" />
+                            <point x="0.5" y="0.24898" />
+                            <point x="0.663265" y="0.336735" />
+                            <point x="0.706122" y="0.706122" />
+                            <point x="0.5" y="0.873469" />
+                            <point x="0.293878" y="0.706122" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="shoot" sid="889203863324541">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="698674069357165" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edoua\Downloads\image_2024-06-21_111708913-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.0253165" y="0.111111" />
+                            <point x="0.5" y="0.0277778" />
+                            <point x="0.987342" y="0.0555556" />
+                            <point x="0.911392" y="0.611111" />
+                            <point x="0.5" y="0.902778" />
+                            <point x="0.0316456" y="0.861111" />
+                            <point x="0.0443038" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jump" sid="828017039581239">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="912554360170622" speed="5">
+                    <frame duration="1" hotspotX="0.501629" hotspotY="0.506667" original-source="C:\Users\edoua\Downloads\image_2024-06-21_112229663-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.140065" y="0.573333" />
+                            <point x="0.498371" y="0.08" />
+                            <point x="0.944625" y="0.226667" />
+                            <point x="0.941368" y="0.493333" />
+                            <point x="0.905537" y="0.613333" />
+                            <point x="0.498371" y="0.88" />
+                            <point x="0.211726" y="0.133333" />
+                            <point x="0.211726" y="0.493333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="panel" sid="844654135125068">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="146657805326127" speed="5">
+                    <frame duration="1" hotspotX="0.501053" hotspotY="0.5" original-source="C:\Users\edoua\Downloads\image_2024-06-21_113718566-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.242105" y="0.218631" />
+                            <point x="0.498947" y="0.127376" />
+                            <point x="0.795789" y="0.184411" />
+                            <point x="0.747368" y="0.5" />
+                            <point x="0.517895" y="0.564639" />
+                            <point x="0.498947" y="0.903042" />
+                            <point x="0.461053" y="0.58365" />
+                            <point x="0.246316" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Move" sid="350933558629613">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="211853032251974" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\edoua\Downloads\image_2024-06-21_114406895-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.0308219" y="0.121622" />
+                            <point x="0.5" y="0.121622" />
+                            <point x="0.958904" y="0.162162" />
+                            <point x="0.924658" y="0.5" />
+                            <point x="0.965753" y="0.864865" />
+                            <point x="0.5" y="0.824324" />
+                            <point x="0.0308219" y="0.878378" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Level.xml</layout>
+        <layout>Menu.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Level.xml</event-sheet>
+        <event-sheet>menu.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="1" />
+        <global-instance type="Keyboard" uid="2" />
+        <global-instance type="Browser" uid="34" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
